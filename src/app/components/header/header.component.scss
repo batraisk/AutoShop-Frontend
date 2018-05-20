@@ -1,0 +1,30 @@
+@import '../../../variables';
+$border-style: 1px solid $gray;
+
+@mixin blocks() {
+  align-items: center;
+  border-right: $border-style;
+  display: flex;
+  height: 100%;
+}
+
+.header {
+  border-bottom: $border-style;
+  display: flex;
+  height: 60px;
+  width: 100%;
+
+  .header-conteiner {
+    height: 100%;;
+    display: flex;
+  }
+
+  .logo {
+    @include blocks();
+    width: 254px;
+  }
+  .catalog {
+    @include blocks();
+    width: 194px;
+  }
+}
